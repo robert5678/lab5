@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Cookie</title>
+</head>
+<body>
+    <h2>Встановлення Cookies</h2>
+    <form action="/api/home/set-cookie" method="post">
+        <label for="value">Введіть значення:</label>
+        <input type="text" id="value" name="value" required><br><br>
+
+        <label for="expiry">Виберіть дату та час:</label>
+        <input type="datetime-local" id="expiry" name="expiry" required><br><br>
+
+        <button type="submit">Встановити Cookie</button>
+    </form>
+</body>
+</html>
